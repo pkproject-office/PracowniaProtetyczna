@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +38,7 @@ section {
 }
 
 nav {
+    background: #303036;
     position:static;
     top: 10px;
     width: 100%;
@@ -45,27 +46,40 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    color:#000;
   }
 
 .logo {
-    color: #000;
+    color: rgb(235, 231, 231);
     font-size: 30px;
-    font-family: 'Roboto Slab', serif;
-    
+    font-family: 'Dosis', sans-serif;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    word-spacing: 6px;
+
 }
 
 .nav-links li {
-    display:inline;
+    display: inline-block;
     list-style-type: none;
-    letter-spacing: 2px;
-    padding-right: 20px;
-    font-size: 18px;
+    line-height: 80px;
+    margin: 0 10px;   
+}
+
+.nav-links li a {
+  color: rgb(235, 231, 231);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+  color: #5e5e80;
+  transition: .5s;
 }
 
 .intro-container {
-    width: 80%;
-    margin: 90px auto;
+    width: 70%;
+    margin: 150px auto;
     background-color: #f1f2f6;
     display: flex;
 }
@@ -73,12 +87,11 @@ nav {
 .intro-contain h2{
     font-size: 40px;
     text-align: center;
-    margin: 15px;
+    margin: 30px;
 }
 
 .intro-contain p{
-    padding: 15px;
-    margin-top: 15%;
+    padding: 40px;
 }
 
 .intro {
@@ -154,6 +167,10 @@ nav {
 .gallery h2{
     text-align: center;
     font-size: 40px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #303036;
+    color: rgb(235, 231, 231);
 }
 
 .gallery-container{
@@ -161,7 +178,7 @@ nav {
     column-count: 4;
     padding: 20px;
     width: 80%;
-    margin: 90px auto;
+    margin: 40px auto;
 }
 
 .gallery-image{
@@ -195,6 +212,11 @@ nav {
     flex: 1;
     padding: 30px;
     margin: 5px;
+  }
+
+  .footer .logo-text {
+    font-family: 'Dosis', sans-serif;
+    word-spacing: 6px;
   }
   
   .footer .footer-content h1{
@@ -274,18 +296,24 @@ nav {
     }
 
     @media (max-width: 768px){
+
+
+        .team{
+          height: 400px;
+          width: 100%;
+        }
  
         .image img {
-            width: 100%;
+          width: 100%;
         }
         .image .details p{
-            font-size: 16px;
+          font-size: 16px;
         }
     
         .intro-container {
-            width: 100%;
+          width: 100%;
         }
         .gallery-container{
-            column-count: 2;
+          column-count: 2;
         }
     }

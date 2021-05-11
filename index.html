@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pracownia Protetyczna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
@@ -15,13 +16,13 @@
         <div class="slide">
             <nav>
                 <div class="logo">
-                    <h3>Pracownia Protetyczna</h3>
+                    <h3 id="Home">Pracownia Protetyczna</h3>
                 </div>
                 <ul class="nav-links">
-                    <li>Home</li>
-                    <li>O nas</li>
-                    <li>Galeria</li>
-                    <li>Kontakt</li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">O nas</a></li>
+                    <li><a href="#Gallery">Galeria</a></li>
+                    <li><a href="#Contact">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="homeImage"><img class="team" src="images/homephoto.jpg"></div>
@@ -31,15 +32,16 @@
 
     <div class="intro-container">
         <div class="intro-contain">
-            <h2>Poznajmy się</h2>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                id est
-                laborum."</p>
+            <h2 id="About">Poznajmy się</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum
+                rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+                perferendis doloribus asperiores repellat.</p>
         </div>
         <div class="intro">
             <div class="image">
@@ -57,7 +59,7 @@
 
 
     <section class="gallery">
-        <h2>Galeria</h2>
+        <h2 id="Gallery">Galeria</h2>
         <div class="gallery-container">
             <div class="gallery-image">
                 <img class="photogallery" src="images/1.jpg">
@@ -89,11 +91,10 @@
 
     <div class="footer">
         <div class="footer-content">
-
             <div class="footer-section about">
                 <h1 class="logo-text"><span>Pracownia Protetyczna</h1>
 
-                <div class="contact">
+                <div id="Contact" class="contact">
                     <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
                     <span><i class="fas fa-envelope"></i> &nbsp; info@pracownia.com</span>
                     <span><i class="fas fa-map-marker-alt"></i> &nbsp; Gorzów Wielkopolski 30/6</span>
