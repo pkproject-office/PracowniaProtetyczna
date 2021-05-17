@@ -79,10 +79,11 @@ nav {
 }
 
 .intro-container {
-    width: 70%;
-    margin: 150px auto;
     background-color: #f1f2f6;
     display: flex;
+    padding: 20px;
+    width: 80%;
+    margin: 40px auto;
 }
 
 .intro-contain h2{
@@ -152,17 +153,38 @@ nav {
 }
 
 .image .details p {
-    margin: 30px 30px 0 30px;
-    font-size: 15px;
-    text-align: center;
-    opacity: 0;
-    transition: 0.6s;
-    transition-property: opacity, transform;
+  margin: 30px 30px 0 30px;
+  font-size: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity, transform;
 }
 
-.image:hover .details p{
+.image:hover .details p {
 	opacity: 1;
 	transform: translateY(-40px);
+}
+
+.introduction h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #303036;
+  color: rgb(235, 231, 231);
+}
+
+.introduction-container {
+  padding: 20px;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.introduction-container ul{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .gallery h2{
