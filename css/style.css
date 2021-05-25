@@ -29,11 +29,11 @@ section {
 
 .slide {
   width: 100%;
-  height: 700px;
+  height: 900px;
 }
 
 .team {
-  height: 900px;
+  height: 750px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -191,8 +191,7 @@ nav {
 }
 
 .introduction-container ul {
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: center;
@@ -310,14 +309,21 @@ nav {
 
 .footer .footer-bottom {
   background: #393d40;
-  color: #c5c2c2;
   height: 50px;
   width: 100%;
   text-align: center;
   position: absolute;
   bottom: 0px;
   left: 0px;
-  padding-top: 20px;
+  padding-top: 15px;
+}
+
+.footer-bottom .bottomLink {
+  color: #81ecec;
+}
+
+.footer-bottom .bottomLink:hover {
+  color: #ebe7e7;
 }
 
 @media only screen and (max-width: 934px) {
