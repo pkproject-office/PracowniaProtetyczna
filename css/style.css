@@ -453,7 +453,7 @@ nav {
   .gallery-container {
     margin: 40px 40px 10px 40px;
   }
-  .map {
+  .footer-content .footer-section map {
     display: none;
   }
 }
