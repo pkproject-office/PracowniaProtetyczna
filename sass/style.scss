@@ -320,6 +320,29 @@ nav {
   color: rgb(235, 231, 231);
 }
 
+@media only screen and (max-width: 1024px) {
+  .intro-container {
+    width: 80%;
+  }
+
+  .logo {
+    line-height: 60px;
+  }
+
+  .nav-links li {
+    line-height: 60px;
+  }
+
+  .slide {
+    width: 100%;
+    height: 600px;
+  }
+
+  .footer {
+    height: 450px;
+  }
+}
+
 @media only screen and (max-width: 934px) {
   .footer {
     height: auto;
@@ -335,7 +358,24 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .nav-links li {
+    line-height: 40px;
+    margin: 0 30px;
+    display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 22px;
+    text-transform: lowercase;
+    margin-right: 70px;
+  }
+
+  .logo {
+    font-size: 28px;
+    line-height: 50px;
+  }
+
   .team {
     height: 350px;
     width: 100%;
@@ -343,7 +383,7 @@ nav {
 
   .slide {
     width: 100%;
-    height: 700px;
+    height: 500px;
   }
 
   .image img {
@@ -369,4 +409,61 @@ nav {
     margin: 0 auto;
     column-count: 2;
   }
+}
+
+@media only screen and (max-width: 512px) {
+  .carousel-container {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .nav-links li {
+    line-height: 40px;
+    margin: 0 30px;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
+    text-transform: lowercase;
+    margin-right: 70px;
+  }
+
+  .logo {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .intro p {
+    text-align: left;
+    font-size: 17px;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .image .details h2 {
+    margin: 60px 10px 0 20px;
+  }
+
+  .image .details p {
+    margin: 20px 10px 0 20px;
+    font-size: 14px;
+  }
+
+  .intro-container {
+    margin: 40px 20px auto;
+  }
+
+  .gallery-container {
+    margin: 40px 40px 10px 40px;
+  }
+
+  .footer-content .footer-section map {
+    display: none;
+  }
+
 }
