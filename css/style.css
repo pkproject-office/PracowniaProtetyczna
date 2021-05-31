@@ -29,11 +29,11 @@ section {
 
 .slide {
   width: 100%;
-  height: 750px;
+  height: 700px;
 }
 
 .team {
-  height: 750px;
+  height: 600px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -54,7 +54,7 @@ nav {
 }
 
 .logo {
-  color: #ebe7e7;
+  color: #81ecec;
   font-size: 30px;
   font-family: "Dosis", sans-serif;
   line-height: 80px;
@@ -241,7 +241,7 @@ nav {
 .footer {
   background: #303036;
   color: #d3d3d3;
-  height: 400px;
+  height: 550px;
   position: relative;
 }
 
@@ -264,7 +264,7 @@ nav {
 }
 
 .footer .footer-content h1 {
-  color: #ebe7e7;
+  color: #81ecec;
   margin-bottom: 10px;
 }
 
@@ -313,6 +313,21 @@ nav {
   color: white;
   margin-left: 15px;
   transition: all 0.2s;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 55%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 80%;
+  width: 100%;
+  position: absolute;
 }
 
 .footer .footer-bottom {
@@ -448,14 +463,10 @@ nav {
     font-size: 14px;
   }
   .intro-container {
-    margin: 40px 20px auto;
+    margin: 40px 10px auto;
   }
   .gallery-container {
     margin: 40px 40px 10px 40px;
   }
-  .footer {
-    height: 800px;
-  }
-  
 }
 /*# sourceMappingURL=style.css.map */
