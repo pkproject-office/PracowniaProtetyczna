@@ -27,15 +27,15 @@ section {
   position: relative;
 }
 
-.slide {
-  width: 100%;
-  height: 700px;
-}
+// .slide {
+//   width: 100%;
+//   height: 700px;
+// }
 
-.team {
-  height: 600px;
-  width: 100%;
-}
+// .team {
+//   height: 600px;
+//   width: 100%;
+// }
 
 nav {
   background: #303036;
@@ -348,11 +348,6 @@ nav {
     line-height: 60px;
   }
 
-  .slide {
-    width: 100%;
-    height: 600px;
-  }
-
   .footer {
     height: 450px;
   }
@@ -395,16 +390,6 @@ nav {
     line-height: 50px;
   }
 
-  .team {
-    height: 350px;
-    width: 100%;
-  }
-
-  .slide {
-    width: 100%;
-    height: 500px;
-  }
-
   .image img {
     width: 100%;
   }
@@ -439,16 +424,6 @@ nav {
 }
 
 @media only screen and (max-width: 512px) {
-  .carousel-container {
-    width: 100%;
-    height: 500px;
-    margin: 0;
-  }
-
-  .slide {
-    width: 100%;
-  }
-
   .nav-links li {
     line-height: 40px;
     margin: 0 30px;
