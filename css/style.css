@@ -35,8 +35,6 @@ section {
 .team {
   height: 600px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 nav {
