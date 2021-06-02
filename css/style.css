@@ -344,6 +344,9 @@ nav {
   .logo {
     line-height: 60px;
   }
+  .team {
+    height: 500px;
+  }
   .nav-links li {
     line-height: 60px;
   }
@@ -385,6 +388,11 @@ nav {
     font-size: 28px;
     line-height: 50px;
   }
+  .team {
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .image img {
     width: 100%;
   }
@@ -425,6 +433,9 @@ nav {
   .logo {
     font-size: 25px;
     line-height: 50px;
+  }
+  .team {
+    height: 200px;
   }
   .intro p {
     text-align: left;
