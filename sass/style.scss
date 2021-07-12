@@ -533,13 +533,16 @@ section {
   .map-responsive {
     padding-bottom: 55%;
   }
+  .logo {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 512px) {
   .logo {
     height: 60px;
     line-height: 60px;
-    font-size: 21px;
+    font-size: 10px;
   }
 
   .team {
