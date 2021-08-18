@@ -114,7 +114,7 @@ header {
 }
 
 #navbar ul li a {
-  color: rgb(223, 208, 208);
+  color: #dfd0d0;
   height: 60px;
   line-height: 60px;
   display: inline-block;
@@ -216,7 +216,7 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  color: rgb(223, 208, 208);
+  color: #dfd0d0;
   width: 100%;
   height: 100%;
 }
@@ -237,7 +237,7 @@ section {
 
 .image:hover .details h2 {
   transform: translateY(-30px);
-  color: rgb(17, 16, 16);
+  color: #111010;
 }
 
 .image .details p {
@@ -253,7 +253,7 @@ section {
 .image:hover .details p {
   opacity: 1;
   transform: translateY(-40px);
-  color: rgb(17, 16, 16);
+  color: #111010;
   font-weight: 600;
 }
 
@@ -262,7 +262,7 @@ section {
   font-size: 40px;
   padding: 20px;
   background-color: #303036;
-  color: rgb(235, 231, 231);
+  color: #ebe7e7;
 }
 
 .introduction-container {
@@ -294,7 +294,7 @@ section {
   font-size: 40px;
   padding: 20px;
   background-color: #303036;
-  color: rgb(235, 231, 231);
+  color: #ebe7e7;
 }
 
 .gallery-container {
@@ -309,8 +309,6 @@ section {
   display: inline-block;
   margin-bottom: 10px;
   overflow: hidden;
-  width: 400px;
-  height: 300px;
 }
 
 .photogallery {
@@ -319,7 +317,7 @@ section {
 }
 
 .photogallery:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .footer {
@@ -351,7 +349,7 @@ section {
 }
 
 .footer .footer-content h2 {
-  color: rgb(235, 231, 231);
+  color: #ebe7e7;
 }
 
 .footer .footer-content .about h1 span {
@@ -428,14 +426,13 @@ section {
 }
 
 .footer-bottom .bottomLink:hover {
-  color: rgb(235, 231, 231);
+  color: #ebe7e7;
 }
 
 @media only screen and (max-width: 1024px) {
   .team {
     height: 550px;
   }
-
   #navbar {
     position: fixed;
     bottom: -100%;
@@ -446,42 +443,28 @@ section {
     justify-content: center;
     align-items: center;
   }
-
   #navbar.active {
     height: calc(100vh - 60px);
     bottom: 0;
     width: 100%;
   }
-
   #navbar ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .color-box {
     display: none;
   }
-
   .color-box1 {
     display: none;
   }
-
   .intro-contain {
     width: 100%;
   }
-
   .image .details p {
     margin: 10px 30px 30px 30px;
     font-size: 15px;
-  }
-  .gallery-image {
-    display: inline-block;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 200px;
-    height: 150px;
-    padding: 5px;
   }
 }
 
@@ -489,30 +472,18 @@ section {
   .color-box {
     display: none;
   }
-
   .color-box1 {
     display: none;
   }
-
   .footer {
     height: auto;
   }
-
   .footer .footer-content {
     height: auto;
     flex-direction: column;
   }
-
   .map-responsive {
     padding-bottom: 35%;
-  }
-  .gallery-image {
-    display: inline-block;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 200px;
-    height: 150px;
-    padding: 5px;
   }
 }
 
@@ -520,47 +491,32 @@ section {
   .team {
     height: 350px;
   }
-
   .color-box {
     display: none;
   }
-
   .color-box1 {
     display: none;
   }
-
   section {
     min-height: 50vh;
   }
-
   .image img {
     width: 100%;
   }
-
   .image .details p {
     font-size: 16px;
   }
-
   .intro-container {
     margin: 0;
     width: 100%;
     padding: 20px;
     border: none;
   }
-
   .map-responsive {
     padding-bottom: 55%;
   }
   .logo {
     font-size: 16px;
-  }
-  .gallery-image {
-    display: inline-block;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 200px;
-    height: 150px;
-    padding: 5px;
   }
 }
 
@@ -570,47 +526,34 @@ section {
     line-height: 60px;
     font-size: 10px;
   }
-
   .team {
     height: 300px;
     width: 100%;
     object-fit: cover;
   }
-
   .color-box {
     display: none;
   }
-
   .color-box1 {
     display: none;
   }
-
   .intro p {
     text-align: left;
     font-size: 17px;
     margin: 10px;
     padding: 5px;
   }
-
   .image .details h2 {
     margin: 60px 10px 0 20px;
   }
-
   .image .details p {
     margin: 20px 10px 0 20px;
     font-size: 17px;
     text-align: center;
   }
-
   .map-responsive {
     padding-bottom: 50%;
   }
-  .gallery-image {
-    display: inline-block;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 90px;
-    height: 70px;
-    padding: 3px;
-  }
 }
+
+/*# sourceMappingURL=style.css.map */

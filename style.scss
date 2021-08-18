@@ -309,8 +309,6 @@ section {
   display: inline-block;
   margin-bottom: 10px;
   overflow: hidden;
-  width: 400px;
-  height: 300px;
 }
 
 .photogallery {
@@ -319,7 +317,7 @@ section {
 }
 
 .photogallery:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .footer {
@@ -475,14 +473,6 @@ section {
     margin: 10px 30px 30px 30px;
     font-size: 15px;
   }
-  .gallery-image {
-    display: inline-block;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 200px;
-    height: 150px;
-    padding: 5px;
-  }
 }
 
 @media only screen and (max-width: 934px) {
@@ -505,14 +495,6 @@ section {
 
   .map-responsive {
     padding-bottom: 35%;
-  }
-  .gallery-image {
-    display: inline-block;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 200px;
-    height: 150px;
-    padding: 5px;
   }
 }
 
@@ -553,14 +535,6 @@ section {
   }
   .logo {
     font-size: 16px;
-  }
-  .gallery-image {
-    display: inline-block;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 200px;
-    height: 150px;
-    padding: 5px;
   }
 }
 
@@ -604,13 +578,5 @@ section {
 
   .map-responsive {
     padding-bottom: 50%;
-  }
-  .gallery-image {
-    display: inline-block;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 90px;
-    height: 70px;
-    padding: 3px;
   }
 }
