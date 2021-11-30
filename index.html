@@ -3,18 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="Description" content="Pracownia protetyczna Gorzów. Naprawa protez ANdent"/>
-    <meta name="Keywords" content="Pracownia protetyczna, złamana proteza, naprawa protez, protezy dentystyczne, zębowe, protezy elastyczne, Protetyk, wybielanie zębów, wstawianie zęba"/>
+    <meta name="Description" content="Pracownia protetyczna Gorzów. Naprawa protez ANdent" />
+    <meta name="Keywords" content="Pracownia protetyczna, złamana proteza, naprawa protez, protetyk gorzów, protezy dentystyczne, zębowe, protezy elastyczne, 
+    Protetyk, wybielanie zębów, wstawianie zęba, protezy wieprzyce, naprawa protez gorzów," />
     <title>Pracownia Protetyczna ANdent </title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
-
-<body>
-    <header id="header">
+ 
+<body onload="zmienslajd()">
+    <header id="header"> 
         <div class="logo">
             <h1>Pracownia Protetyczna ANdent</h1>
         </div>
@@ -29,9 +31,9 @@
             </ul>
         </div>
     </header>
-
+ 
     <section id="Home">
-        <img class="team" src="images/Work/10.jpg">
+        <img class="team" src="images/naglowek.jpg">
     </section>
 
     <section id="About">
@@ -42,7 +44,7 @@
                     <div class="color-box"></div>
                     <div class="color-box1"></div>
                     <div class="image">
-                        <img src="images/Profile/osoba 2 cut.jpg" alt="">
+                        <img src="images/Profile/osoba.jpg" alt=""> 
                         <div class="details">
                             <h2>Anna Plust</h2>
                             <p>Jestem absolwentką Uniwersytetu Medycznego w Łodzi z tytułem magistra zdrowia publicznego
@@ -54,16 +56,14 @@
                         </div>
                     </div>
                     <p>Pracownia Protetyczna <strong>ANdent</strong> powstała w 2012r. <br>Wyróżnia nas wysoki standard
-                        oraz
-                        szeroki zakres
-                        usług protetycznych, popartych wiedzą i doświadczeniem zdobytym na uczelniach, szkoleniach i
-                        ciągłej pracy.
+                        oraz szeroki zakres usług protetycznych, popartych wiedzą i doświadczeniem zdobytym na uczelniach, 
+                        szkoleniach i ciągłej pracy.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
+ 
     <div class="introduction">
         <h2 id="Offer">Oferta</h2>
         <div class="introduction-container">
@@ -72,7 +72,8 @@
             <i class="fas fa-tooth">Protezy akronowe</i>
             <i class="fas fa-tooth">Protezy acetalowe</i>
             <i class="fas fa-tooth">Protezy elastyczne (niełamiące się, bez metalowych klamer)</i>
-            <i class="fas fa-tooth">Protezy hybrydowe - połączenie protez szkieletowej i elastycznej bez metalowych klamer</i>
+            <i class="fas fa-tooth">Protezy hybrydowe - połączenie protez szkieletowej i elastycznej bez metalowych
+                klamer</i>
             <i class="fas fa-tooth">Protezy szkieletowe</i>
             <i class="fas fa-tooth">Podścielenie protezy</i>
             <i class="fas fa-tooth">Szyny do wybielania zębów</i>
@@ -84,46 +85,70 @@
 
         </div>
     </div>
+    <!-- Container for the image gallery -->
+    <div class="container">
+        
+        <div id="slider"></div>
 
-    <section id="Gallery">
-        <div class="gallery">
-            <h2>Galeria</h2>
-            <div class="gallery-container">
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/gl 1.jpg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/gl 2.jpg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/gl 3.jpg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/gl 4.jpg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/2.jpeg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/3.jpeg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/5.jpeg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/6.jpeg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/9.jpeg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/8.jpeg">
-                </div>
-                <div class="gallery-image">
-                    <img class="photogallery" src="images/Work/4.jpeg">
-                </div>
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div> 
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd1.jpg" style="width:100%" onclick="ustawslajd(1)"
+                    alt="Przed uzupełnieniem ubytku">
             </div>
-    </section>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd2.jpg" style="width:100%" onclick="ustawslajd(2)"
+                    alt="Po uzupełnieniu ubytku">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd3.jpg" style="width:100%" onclick="ustawslajd(3)"
+                    alt="Produkt własny">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd4.jpg" style="width:100%" onclick="ustawslajd(4)"
+                    alt="Produkt własny">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd5.jpg" style="width:100%" onclick="ustawslajd(5)"
+                    alt="Produkt własny">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd6.jpg" style="width:100%" onclick="ustawslajd(6)"
+                    alt="Produkt własny">
+            </div>
+        
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd7.jpg" style="width:100%" onclick="ustawslajd(7)"
+                    alt="Produkt własny">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd8.jpg" style="width:100%" onclick="ustawslajd(8)"
+                    alt="Produkt własny">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd9.jpg" style="width:100%" onclick="ustawslajd(9)"
+                    alt="Produkt własny">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd10.jpg" style="width:100%" onclick="ustawslajd(10)"
+                    alt="Produkt własny">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd11.jpg" style="width:100%" onclick="ustawslajd(11)"
+                    alt="Produkt własny">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/images/Work/Slajd12.jpg" style="width:100%" onclick="ustawslajd(12)"
+                    alt="Produkt własny">
+            </div>
+        </div>
+    </div>
+
 
     <div id="Contact" class="footer">
         <div class="footer-content">
