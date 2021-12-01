@@ -44,6 +44,7 @@ header {
   cursor: pointer;
 }
 
+// Hamburger
 #toggle {
   position: absolute;
   top: 0;
@@ -137,6 +138,7 @@ section {
   font-size: 18px;
 }
 
+// Intro
 .intro-container {
   display: flex;
   padding: 30px;
@@ -289,6 +291,7 @@ section {
   width: 60%;
 }
 
+// gallery
 .gallery h2 {
   text-align: center;
   font-size: 40px;
@@ -303,6 +306,10 @@ section {
   padding: 20px;
   width: 80%;
   margin: 40px auto;
+}
+
+#slider {
+  height: 320px;
 }
 
 .gallery-image {
@@ -320,6 +327,7 @@ section {
   transform: scale(1.1);
 }
 
+// footer
 .footer {
   background: #303036;
   color: #d3d3d3;
@@ -429,6 +437,7 @@ section {
   color: rgb(235, 231, 231);
 }
 
+// Media Queries
 @media only screen and (max-width: 1024px) {
   .team {
     height: 550px;
