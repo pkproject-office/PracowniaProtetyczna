@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -297,6 +298,33 @@ section {
   height: 320px;
 }
 
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 12 columns side by side */
+.column {
+  float: left;
+  width: 8.3%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 .footer {
   background: #303036;
   color: #d3d3d3;
@@ -524,9 +552,18 @@ section {
   #toggle {
     height: 50px;
   }
+  #slider .img {
+    max-height: 100px;
+  }
 }
 
 @media only screen and (max-width: 512px) {
+  * {
+    max-width: 355px;
+  }
+  body {
+    margin: 0px;
+  }
   .logo {
     height: 60px;
     line-height: 60px;
@@ -556,58 +593,5 @@ section {
   .map-responsive {
     padding-bottom: 50%;
   }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-  text-align: center;
-  border-top: 3px dotted #222222;
-  padding-top: 20px;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  border: 5px #222222;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 8.3%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
