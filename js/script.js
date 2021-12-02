@@ -20,6 +20,7 @@ toggle.onclick = function () {
 //początek od różnych slajdów
 var number = Math.floor(Math.random()*12)+1;
 
+
 //wyzerowanie czasu
 var timer1 = 0
 var timer2 = 0
@@ -44,7 +45,7 @@ function hide()
 function changephoto()
 {
     number++; if (number>12) number=1
-
+    
     //ścieżka do galerii
     var plik = "<img src=\"/images/Work/Slajd" + number +".jpg\"/>";
     
@@ -53,4 +54,8 @@ function changephoto()
 
     timer1 = setTimeout("changephoto()",5000);
     timer2 = setTimeout("hide()",4500);
+    
 }
+//zmiana koloru
+
+
