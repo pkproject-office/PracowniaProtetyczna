@@ -417,7 +417,7 @@ section {
 
 @media only screen and (max-width: 1024px) {
   .team {
-    height: 450px;
+    height: 250px;
     margin-top: -10px;
   }
 
@@ -495,7 +495,7 @@ section {
 
 @media only screen and (max-width: 768px) {
   .team {
-    height: 350px;
+    height: 200px;
     margin-top: -25px;
   }
   section {
@@ -531,6 +531,7 @@ section {
     height: 150px;
     padding: 5px;
   }
+  
 }
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
