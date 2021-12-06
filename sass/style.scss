@@ -279,6 +279,7 @@ section {
 #slider {
   height: 320px;
 }
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
@@ -542,7 +543,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 414px) {
   body {
     margin: 0px;
   }
@@ -577,15 +578,19 @@ section {
     text-align: center;
   }
 
-  .map-responsive {
-    padding-bottom: 50%;
+  #slider {
+    width: 90%;
+  }
+
+  #slider img {
+    margin-left: 20px;
+    width: 360px;
   }
 }
 
-@media only screen and (max-width: 414px) {
-  .logo {
-    height: 60px;
-    line-height: 60px;
-    font-size: 10px;
+@media only screen and (max-width: 375px) {
+  #slider img {
+    margin-left: 30px;
+    width: 300px;
   }
 }
