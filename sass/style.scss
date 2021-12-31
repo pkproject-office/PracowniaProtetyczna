@@ -207,11 +207,13 @@ section {
 .image .details h2 {
   text-align: center;
   font-size: 36px;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-weight: 600;
-  margin-top: 27%;
+  margin-top: 20%;
   transition: 0.5s;
   transition-property: transform;
+  background-color: #585d608b;
+  border-radius: 5px;
 }
 
 .image .details h2 span {
@@ -399,7 +401,7 @@ section {
 
 .footer .footer-bottom {
   background: #393d40;
-  position: fixed;
+  // position:static;
   height: 60px;
   width: 100%;
   text-align: center;
@@ -420,6 +422,12 @@ section {
   .team {
     height: 250px;
     margin-top: -10px;
+  }
+
+  .logo{
+    height: 60px;
+    line-height: 60px;
+    font-size: 23px;
   }
 
   #navbar {
@@ -499,6 +507,9 @@ section {
     height: 200px;
     margin-top: -25px;
   }
+  #toggle {
+    height: 60px;
+  }
   section {
     min-height: 50vh;
   }
@@ -536,22 +547,23 @@ section {
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
   #toggle {
-    height: 50px;
+    height: 60px;
   }
   #slider .img {
     max-height: 100px;
   }
 }
 
-@media only screen and (max-width: 414px) {
-  body {
-    margin: 0px;
+@media only screen and (max-width: 415px) {
+  .logo{
+    height: 50px;
+    line-height: 50px;
+    font-size: 10px;
   }
 
-  .logo {
-    height: 60px;
-    line-height: 60px;
-    font-size: 10px;
+  #toggle {
+    width: 50px;
+    height: 50px;
   }
 
   .team {
